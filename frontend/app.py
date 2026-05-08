@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-API = "https://your-fastapi-url.com"
+API = "https://pgagi-backend.onrender.com"
 
 st.set_page_config(page_title="AI Interview System", layout="wide")
 
