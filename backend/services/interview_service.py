@@ -1,5 +1,5 @@
-
 from backend.services.llm_service import ask_llm
+
 
 def generate_question(resume_text, role, history):
 
@@ -8,7 +8,7 @@ def generate_question(resume_text, role, history):
         for h in history
     ])
 
-    prompt = f'''
+    prompt = f"""
     Candidate Role: {role}
 
     Resume:
@@ -18,8 +18,10 @@ def generate_question(resume_text, role, history):
     {previous_context}
 
     Generate ONE advanced technical interview question.
+
     Make it adaptive and relevant to the candidate background.
+
     Avoid generic questions.
-    '''
+    """
 
     return ask_llm(prompt)
