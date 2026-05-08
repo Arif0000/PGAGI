@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-API = "http://127.0.0.1:8000"
+API = "https://your-fastapi-url.com"
 
 st.set_page_config(page_title="AI Interview System", layout="wide")
 
