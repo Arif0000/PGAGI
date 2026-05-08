@@ -1,15 +1,7 @@
-
-# AI Interview System
-
-## Run Backend
-
-
-## Run Frontend
-streamlit run frontend/app.py
-
-## Features
-- Resume Upload
-- RAG-based Question Generation
-- Adaptive Interview
-- AI Evaluation
-- Final Report
+streamlit
+fastapi
+uvicorn
+openai
+python-dotenv
+requests
+pydantic
