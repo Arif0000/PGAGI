@@ -1,8 +1,9 @@
 from backend.services.llm_service import ask_llm
 
+
 def evaluate_answer(question, answer):
 
-    prompt = f'''
+    prompt = f"""
     Evaluate the candidate answer.
 
     Question:
@@ -16,6 +17,6 @@ def evaluate_answer(question, answer):
     - Strengths
     - Weaknesses
     - Improvement Suggestions
-    '''
+    """
 
     return ask_llm(prompt)
